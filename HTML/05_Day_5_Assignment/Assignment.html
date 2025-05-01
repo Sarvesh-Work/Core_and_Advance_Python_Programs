@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Glenary's Restaurant</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        background-color: #333;
+        color: white;
+        padding: 15px 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      header h1 {
+        margin: 0;
+        font-size: 24px;
+      }
+
+      .container {
+        padding: 30px;
+      }
+
+      .menu-title {
+        font-size: 28px;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+
+      .menu-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px;
+      }
+
+      .dish-card {
+        border: 1px solid #ccc;
+        padding: 15px;
+        border-radius: 8px;
+        background-color: #fafafa;
+      }
+
+      .dish-card img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 5px;
+      }
+
+      .dish-name {
+        font-size: 20px;
+        font-weight: bold;
+        margin: 10px 0 5px;
+      }
+
+      .dish-desc {
+        font-size: 14px;
+        color: #333;
+      }
+
+      .dish-price {
+        font-weight: bold;
+        color: green;
+        margin-top: 5px;
+      }
+
+      .videos {
+        margin-top: 50px;
+      }
+
+      .videos h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+
+      video {
+        width: 100%;
+        height: 250px;
+        border-radius: 5px;
+      }
+
+      .video-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Glenary's Restaurant</h1>
+    </header>
+
+    <div class="container">
+      <div class="menu-title">Menu</div>
+      <div class="menu-grid">
+        <div class="dish-card">
+          <img
+            src="https://www.vegrecipesofindia.com/wp-content/uploads/2018/05/paneer-pizza-recipe-1.jpg"
+            alt="Pizza Supreme"
+          />
+          <div class="dish-name">Pizza Supreme</div>
+          <div class="dish-desc">
+            Pizza base, mozzarella, bacon, onion, bell peppers, mushrooms,
+            olives
+          </div>
+          <div class="dish-price">Price: ₹250</div>
+        </div>
+
+        <div class="dish-card">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjU3AT9r8228is-t5JHuLCk2InG0PID_mpRw&s"
+            alt="Paneer Tikka"
+          />
+          <div class="dish-name">Paneer Tikka</div>
+          <div class="dish-desc">
+            Paneer, Yogurt, Spices, Bell Peppers, Onions, Baby Corn
+          </div>
+          <div class="dish-price">Price: ₹300</div>
+        </div>
+
+        <div class="dish-card">
+          <img
+            src="https://ministryofcurry.com/wp-content/uploads/2024/06/chicken-biryani-5.jpg"
+            alt="Chicken Biryani"
+          />
+          <div class="dish-name">Chicken Biryani</div>
+          <div class="dish-desc">
+            Basmati rice, Chicken, Biryani spices, Mint, Fried onions
+          </div>
+          <div class="dish-price">Price: ₹280</div>
+        </div>
+
+        <div class="dish-card">
+          <img
+            src="https://shwetainthekitchen.com/wp-content/uploads/2023/03/vegetable-noodles.jpg"
+            alt="Veg Noodles"
+          />
+          <div class="dish-name">Veg Noodles</div>
+          <div class="dish-desc">
+            Hakka noodles, Mixed vegetables, Soy sauce, Garlic
+          </div>
+          <div class="dish-price">Price: ₹150</div>
+        </div>
+
+        <div class="dish-card">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsdHbLpoZ41iDhrAmMy7KT0OX3sgHek0FWwg&s"
+            alt="Butter Chicken"
+          />
+          <div class="dish-name">Butter Chicken</div>
+          <div class="dish-desc">
+            Chicken, Creamy tomato sauce, Spices, Butter, Cream
+          </div>
+          <div class="dish-price">Price: ₹350</div>
+        </div>
+      </div>
+
+      <div class="videos">
+        <h2>Watch Our Popular Dishes</h2>
+        <div class="video-grid">
+          <video controls>
+            <source src="./video.mp4" type="video/mp4" />
+          </video>
+          <video controls>
+            <source src="./video.mp4" type="video/mp4" />
+          </video>
+          <video controls>
+            <source src="./video.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
